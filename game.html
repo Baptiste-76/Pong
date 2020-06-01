@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:site_name" content="Jeu de Tennis">
+    <meta property="og:url" content="https://jeu-de-tennis.herokuapp.com/">
+    <meta property="og:title" content="Jeu de Tennis" name="title">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://jeu-de-tennis.herokuapp.com/ressources/pong.jpg" name="image">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1921" />
+    <meta property="og:image:height" content="1263" />
+    <meta property="og:description" content="Remake du célèbre jeu d'arcade en JavaScript." name="description">
+    <meta name="author" content="Baptiste Bidaux">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Pong</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="tactile-devices">
+            <h2>Attention <span class="blue">!!!</span></h2>
+            <p>Vous utilisez un <span class="blue">périphérique tactile</span>.</p> 
+            <p>Par conséquent, <span class="blue">ce jeu n'est pas disponible</span> car il ne fonctionne que sur PC.</p>
+            <p>Merci de votre compréhension.</p>
+        </div>
+
+        <div class="main">
+            <h1>Pong.</h1>
+            
+            <p>Vous êtes <span class="blue">le joueur de gauche</span>. Faites <span class="blue">bouger votre raquette avec la souris</span> pour marquer des points. Le premier arrivé à <span class="blue">5 points gagne</span> la partie !</p>
+            <p>Pour mettre le jeu en <span class="blue">Pause</span> à tout moment, faites un <span class="blue">clic gauche.</span></p>
+            
+            <button>Start</button>
+            
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
